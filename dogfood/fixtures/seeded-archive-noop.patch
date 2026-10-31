@@ -1,0 +1,5 @@
+--- a/server/api/memo_service.go
++++ b/server/api/memo_service.go
+@@ -400 +400 @@
+-			rowStatus := convertStateToStore(request.Memo.State)
++			rowStatus := convertStateToStore(apipb.State_NORMAL)

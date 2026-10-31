@@ -1,0 +1,16 @@
+{
+  "name": "memos-stately-dogfood",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.0.1",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "statelyai test memo.campaign.mjs --runs 20 --max-commands 12 --path-limit 1000 --seed 42 --timeout 120000 --report .output/campaign.json --fixture .output/replay.json",
+    "replay": "statelyai test memo.campaign.mjs --replay .output/replay.json --report .output/replayed.json"
+  },
+  "dependencies": {
+    "statelyai": "0.19.0"
+  }
+}
