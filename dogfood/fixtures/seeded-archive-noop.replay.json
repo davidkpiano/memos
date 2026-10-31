@@ -1,0 +1,31 @@
+{
+  "formatVersion": 1,
+  "sourcePhase": "property",
+  "campaignId": "memos-local-lifecycle",
+  "modelVersion": "memos-b620ae2-lifecycle-v1",
+  "entrySha256": "7770067cd7ac5dbd9281adab745f3842ef934d78ebb5eb6f2cf2e7e55183d99f",
+  "fixture": {
+    "formatVersion": 2,
+    "machine": {
+      "id": "(machine)"
+    },
+    "start": {
+      "type": "input"
+    },
+    "timeline": [
+      {
+        "kind": "event",
+        "command": {
+          "type": "event",
+          "event": {
+            "type": "ARCHIVE"
+          },
+          "phase": "generated",
+          "origin": "generator",
+          "caseId": "[\"event-case\",\"ARCHIVE\",\"archive\"]"
+        }
+      }
+    ],
+    "failedAt": 1
+  }
+}
